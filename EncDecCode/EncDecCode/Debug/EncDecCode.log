@@ -1,14 +1,15 @@
-﻿生成启动时间为 2019/8/27 16:21:02。
-     1>项目“C:\Users\Kevin\Desktop\Project 1 Code\EncDecCode\EncDecCode\EncDecCode.vcxproj”在节点 2 上(Rebuild 个目标)。
-     1>_PrepareForClean:
-         正在删除文件“Debug\EncDecCode.tlog\EncDecCode.lastbuildstate”。
+﻿生成启动时间为 2019/6/13 22:02:03。
+     1>项目“C:\Users\Kevin\Desktop\MyCode\EncDecCode\EncDecCode\EncDecCode.vcxproj”在节点 2 上(Build 个目标)。
+     1>PrepareForBuild:
+         正在创建目录“C:\Users\Kevin\Desktop\MyCode\EncDecCode\Debug\”。
+         正在创建目录“Debug\EncDecCode.tlog\”。
        InitializeBuildStatus:
          正在创建“Debug\EncDecCode.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:classic /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D PROTOBUF_USE_DLLS /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:prompt Codec.cpp CodecFactory.cpp Message.pb.cc RequestCodec.cpp RequestFactory.cpp RespondCodec.cpp RespondFactory.cpp test.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:classic /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D PROTOBUF_USE_DLLS /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:prompt Codec.cpp CodecFactory.cpp msg.pb.cc RequestCodec.cpp RequestFactory.cpp RespondFactory.cpp RespondCodec.cpp test.cpp
          Codec.cpp
          CodecFactory.cpp
-         Message.pb.cc
+         msg.pb.cc
      1>c:\protobuf\include\google\protobuf\io\coded_stream.h(881): warning C4251: “google::protobuf::io::CodedOutputStream::default_serialization_deterministic_”: struct“std::atomic<bool>”需要有 dll 接口由 class“google::protobuf::io::CodedOutputStream”的客户端使用
          c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xxatomic(162): note: 参见“std::atomic<bool>”的声明
      1>c:\protobuf\include\google\protobuf\stubs\logging.h(102): warning C4251: “google::protobuf::internal::LogMessage::message_”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“google::protobuf::internal::LogMessage”的客户端使用
@@ -242,7 +243,7 @@
                      _Kty=std::string,
                      _Ty=std::string
                  ]
-         RespondCodec.cpp
+         RespondFactory.cpp
      1>c:\protobuf\include\google\protobuf\io\coded_stream.h(881): warning C4251: “google::protobuf::io::CodedOutputStream::default_serialization_deterministic_”: struct“std::atomic<bool>”需要有 dll 接口由 class“google::protobuf::io::CodedOutputStream”的客户端使用
          c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xxatomic(162): note: 参见“std::atomic<bool>”的声明
      1>c:\protobuf\include\google\protobuf\stubs\logging.h(102): warning C4251: “google::protobuf::internal::LogMessage::message_”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“google::protobuf::internal::LogMessage”的客户端使用
@@ -320,7 +321,7 @@
                      _Kty=std::string,
                      _Ty=std::string
                  ]
-         RespondFactory.cpp
+         RespondCodec.cpp
      1>c:\protobuf\include\google\protobuf\io\coded_stream.h(881): warning C4251: “google::protobuf::io::CodedOutputStream::default_serialization_deterministic_”: struct“std::atomic<bool>”需要有 dll 接口由 class“google::protobuf::io::CodedOutputStream”的客户端使用
          c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xxatomic(162): note: 参见“std::atomic<bool>”的声明
      1>c:\protobuf\include\google\protobuf\stubs\logging.h(102): warning C4251: “google::protobuf::internal::LogMessage::message_”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“google::protobuf::internal::LogMessage”的客户端使用
@@ -478,23 +479,23 @@
                  ]
          正在生成代码...
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Kevin\Desktop\Project 1 Code\EncDecCode\Debug\EncDecCode.exe" /INCREMENTAL /NOLOGO libprotobufd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\Kevin\Desktop\Project 1 Code\EncDecCode\Debug\EncDecCode.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Kevin\Desktop\Project 1 Code\EncDecCode\Debug\EncDecCode.lib" /MACHINE:X86 Debug\Codec.obj
+         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Kevin\Desktop\MyCode\EncDecCode\Debug\EncDecCode.exe" /INCREMENTAL /NOLOGO libprotobufd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\Kevin\Desktop\MyCode\EncDecCode\Debug\EncDecCode.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Kevin\Desktop\MyCode\EncDecCode\Debug\EncDecCode.lib" /MACHINE:X86 Debug\Codec.obj
          Debug\CodecFactory.obj
-         Debug\Message.pb.obj
+         Debug\msg.pb.obj
          Debug\RequestCodec.obj
          Debug\RequestFactory.obj
-         Debug\RespondCodec.obj
          Debug\RespondFactory.obj
+         Debug\RespondCodec.obj
          Debug\test.obj
-         EncDecCode.vcxproj -> C:\Users\Kevin\Desktop\Project 1 Code\EncDecCode\Debug\EncDecCode.exe
+         EncDecCode.vcxproj -> C:\Users\Kevin\Desktop\MyCode\EncDecCode\Debug\EncDecCode.exe
        FinalizeBuildStatus:
          正在删除文件“Debug\EncDecCode.tlog\unsuccessfulbuild”。
          正在对“Debug\EncDecCode.tlog\EncDecCode.lastbuildstate”执行 Touch 任务。
-     1>已完成生成项目“C:\Users\Kevin\Desktop\Project 1 Code\EncDecCode\EncDecCode\EncDecCode.vcxproj”(Rebuild 个目标)的操作。
+     1>已完成生成项目“C:\Users\Kevin\Desktop\MyCode\EncDecCode\EncDecCode\EncDecCode.vcxproj”(Build 个目标)的操作。
 
 已成功生成。
 
-       “C:\Users\Kevin\Desktop\Project 1 Code\EncDecCode\EncDecCode\EncDecCode.vcxproj”(Rebuild 目标) (1) ->
+       “C:\Users\Kevin\Desktop\MyCode\EncDecCode\EncDecCode\EncDecCode.vcxproj”(Build 目标) (1) ->
        (ClCompile 目标) -> 
          c:\protobuf\include\google\protobuf\io\coded_stream.h(881): warning C4251: “google::protobuf::io::CodedOutputStream::default_serialization_deterministic_”: struct“std::atomic<bool>”需要有 dll 接口由 class“google::protobuf::io::CodedOutputStream”的客户端使用
          c:\protobuf\include\google\protobuf\stubs\logging.h(102): warning C4251: “google::protobuf::internal::LogMessage::message_”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“google::protobuf::internal::LogMessage”的客户端使用
@@ -632,4 +633,4 @@
     132 个警告
     0 个错误
 
-已用时间 00:00:23.58
+已用时间 00:00:17.87

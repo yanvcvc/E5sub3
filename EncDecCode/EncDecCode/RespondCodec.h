@@ -1,7 +1,7 @@
 ﻿#pragma once
 #include "Codec.h"
 #include <iostream>
-#include "Message.pb.h"
+#include "msg.pb.h"
 using namespace std;
 
 struct RespondInfo

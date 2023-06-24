@@ -2,7 +2,6 @@
 #include "CodecFactory.h"
 #include "RespondCodec.h"
 #include <iostream>
-#include <memory>
 
 class RespondFactory :
 	public CodecFactory
@@ -18,6 +17,5 @@ private:
 	bool m_flag;
 	std::string m_encStr;
 	RespondInfo* m_info;
-	std::shared_ptr<RespondCodec> m_ptr;
 };
 

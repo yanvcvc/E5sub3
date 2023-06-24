@@ -1,5 +1,4 @@
 ﻿#include "RespondFactory.h"
-using namespace std;
 
 RespondFactory::RespondFactory(std::string enc) : CodecFactory()
 {
@@ -19,15 +18,12 @@ Codec * RespondFactory::createCodec()
 	if (m_flag)
 	{
 		codec = new RespondCodec(m_info);
-		//m_ptr = make_shared<RespondCodec>(m_info);
 	}
 	else
 	{
 		codec = new RespondCodec(m_encStr);
-		//m_ptr = make_shared<RespondCodec>(m_encStr);
 	}
 	return codec;
-	//return m_ptr.get();
 }
 
 
