@@ -69,7 +69,7 @@ string ServerOP::seckeyAgree(RequestMsg* reqMsg)
 	ofs.close();
 	// 创建非对称加密对象
 	RespondInfo info;
-	Cryptographic rsa("public.pem", false);
+	RsaCrypto rsa("public.pem", false);
 
 	// 创建哈希对象
 	Hash sha(T_SHA1);
@@ -121,6 +121,8 @@ ServerOP::~ServerOP()
 // 要求: 字符串中包含: a-z, A-Z, 0-9, 特殊字符
 string ServerOP::getRandKey(KeyLen len)
 {
+	// 设置随机数数种子 => 根据时间
+	srand(time(NULL));
 	int flag = 0;
 	string randStr = string();
 	char *cs = "~!@#$%^&*()_+}{|\';[]";

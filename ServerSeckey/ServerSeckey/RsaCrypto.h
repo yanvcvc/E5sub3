@@ -15,13 +15,15 @@ enum SignLevel
 	Level6 = NID_sha512
 };
 
-class Cryptographic
+class RsaCrypto
 {
 public:
-	Cryptographic();
-	Cryptographic(string fileName, bool isPrivate = true);
-	~Cryptographic();
+	RsaCrypto();
+	RsaCrypto(string fileName, bool isPrivate = true);
+	~RsaCrypto();
 
+	// 通过解析字符串得到秘钥
+	void parseKeyString(string keystr, bool pubKey = true);
 	// 生成RSA密钥对
 	void generateRsakey(int bits, string pub = "public.pem", string pri = "private.pem");
 	// 公钥加密
@@ -33,14 +35,18 @@ public:
 	// 使用RSA验证签名
 	bool rsaVerify(string data, string signData, SignLevel level = Level3);
 
+	// base64编码
 private:
+	string toBase64(const char* str, int len);
+	// base64解码
+	char* fromBase64(string str);
 	// 得到公钥
 	bool initPublicKey(string pubfile);
 	// 得到私钥
 	bool initPrivateKey(string prifile);
 
 private:
-	RSA* m_publicKey;	// 公钥
-	RSA* m_privateKey;	// 私钥
+	RSA* m_publicKey;	// 私钥
+	RSA* m_privateKey;	// 公钥
 };
 
